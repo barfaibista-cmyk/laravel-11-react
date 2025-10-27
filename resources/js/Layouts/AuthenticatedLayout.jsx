@@ -3,6 +3,8 @@ import Dropdown from '@/Components/Dropdown';
 import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import Topbar from '@/Components/Topbar';
+import Sidebar from '@/Components/Sidebar';
+import Footer from '@/Components/Footer';
 import { Link, usePage } from '@inertiajs/react';
 import { useState } from 'react';
 
@@ -13,9 +15,11 @@ export default function AuthenticatedLayout({ header, children }) {
 
     return (
         <div className="wrapper">
+			<Sidebar />
 			<div className="page-content">
 				<Topbar user={user.name} />
 				<main>{children}</main>
+				<Footer />
 			</div>
         </div>
     );
