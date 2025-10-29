@@ -13,17 +13,17 @@ const Breadcrumb = ({ title, subtitle}) => {
 
 		        <LuChevronRight className="text-sm flex-shrink-0 text-default-500 rtl:rotate-180" size={14} />
 
-		        {subtitle && <>
 		            <Link href="#" className="text-sm font-medium text-default-700">
-		                {subtitle}
+		                {title}
 		            </Link>
 
 		            <LuChevronRight className="text-sm flex-shrink-0 text-default-500 rtl:rotate-180" size={14} />
-		        </>}
 
-		        <Link href="#" className="text-sm font-medium text-default-700" aria-current="page">
-		            {title}
-		        </Link>
+		        {subtitle && <>
+			        <Link href="#" className="text-sm font-medium text-default-700" aria-current="page">
+			            {subtitle}
+			        </Link>
+		        </>}
 		    </div>
 		</div>
 	)

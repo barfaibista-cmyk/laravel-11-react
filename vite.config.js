@@ -7,7 +7,6 @@ export default defineConfig({
     server: {
         watch: {
             ignored: [
-                '**/node_modules/**',
                 '**/vendor/**',
                 '**/storage/**',
             ],

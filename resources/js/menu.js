@@ -49,14 +49,17 @@ export const menuItemsData = [{
     key: 'Posts',
     label: 'Posts',
     icon: LuBookOpen,
+    href: "/dashboard/posts"
 }, {
     key: 'Categories',
     label: 'Categories',
     icon: LuTags,
+    href: "/dashboard/categories"
 }, {
     key: 'Comments',
     label: 'Comments',
     icon: LuMessagesSquare,
+    href: "/dashboard/comments"
 }, {
 	key: 'User',
 	label: 'User',
@@ -64,15 +67,18 @@ export const menuItemsData = [{
 }, {
 	key: 'Users',
 	label: 'Users',
-	icon: LuUsers
+	icon: LuUsers,
+    href: "/dashboard/users"
 }, {
 	key: 'Roles',
 	label: 'Roles',
-	icon: LuShieldHalf
+	icon: LuShieldHalf,
+    href: "/dashboard/roles"
 }, {
 	key: 'Permissions',
 	label: 'Permissions',
-	icon: LuShieldAlert
+	icon: LuShieldAlert,
+    href: "/dashboard/permission"
 }];
 
 
@@ -298,5 +304,5 @@ export const menuItemsData = [{
             label: 'Grid View',
             href: '/users-grid'
         }]
-}, 
+},
 */
